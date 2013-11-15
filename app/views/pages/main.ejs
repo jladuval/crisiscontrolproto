@@ -1,0 +1,27 @@
+<% layout('../shared/layout') -%>
+<script type="text/x-handlebars" id="application">
+    <p>Welcome aboard! Visit <a href="http://locomotivejs.org/">locomotivejs.org</a> for details.</p>
+    {{animatedOutlet name="index"}}
+</script>
+<script type="text/x-handlebars" id="index">
+    <h2>ARE YOU OK</h2>
+  {{#linkToAnimated help animations="main:slideLeft"}}NO{{/linkToAnimated}}
+  {{#linkTo "canyouhelp"}}YES{{/linkTo}}
+</script>
+<script data-template-name="help" type="text/x-handlebars" id="help">
+     <p>
+        Someone Will be contacting you shortly
+    </p>
+</script>
+<script type="text/x-handlebars" id="canyouhelp">
+    <h2>CAN YOU HELP</h2>
+    {{#linkTo "canthelp"}}NO{{/linkTo}}
+    {{#linkTo "canhelp"}}YES{{/linkTo}}
+</script>
+<script type="text/x-handlebars" id="canthelp">
+    <p>Thanks for the information. Please stay safe.</p>
+</script>
+<script type="text/x-handlebars" id="canhelp">
+    <p>Allocating jobs</p>
+</script>
+<% script('js/mobile.js') -%>
