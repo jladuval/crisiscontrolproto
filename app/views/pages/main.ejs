@@ -1,27 +1,21 @@
 <% layout('../shared/layout') -%>
-<script type="text/x-handlebars" id="application">
-    <p>Welcome aboard! Visit <a href="http://locomotivejs.org/">locomotivejs.org</a> for details.</p>
-    {{animatedOutlet name="index"}}
+<script data-template-name="application" type="text/x-handlebars">
+    <div class="content">
+        {{animatedOutlet name="main"}}
+    </div>
 </script>
-<script type="text/x-handlebars" id="index">
-    <h2>ARE YOU OK</h2>
-  {{#linkToAnimated help animations="main:slideLeft"}}NO{{/linkToAnimated}}
-  {{#linkTo "canyouhelp"}}YES{{/linkTo}}
+
+<script data-template-name="index" type="text/x-handlebars">
+    <h2>Are You Ok? </h2>
+    <a {{action goToNeedHelp}}>No</a>
+    <a {{action goToCanHelp}}>Yes</a>
 </script>
-<script data-template-name="help" type="text/x-handlebars" id="help">
-     <p>
-        Someone Will be contacting you shortly
-    </p>
+
+<script data-template-name="needhelp" type="text/x-handlebars">
+    <h3>Someone will be in touch shortly</h2>
 </script>
-<script type="text/x-handlebars" id="canyouhelp">
-    <h2>CAN YOU HELP</h2>
-    {{#linkTo "canthelp"}}NO{{/linkTo}}
-    {{#linkTo "canhelp"}}YES{{/linkTo}}
-</script>
-<script type="text/x-handlebars" id="canthelp">
-    <p>Thanks for the information. Please stay safe.</p>
-</script>
-<script type="text/x-handlebars" id="canhelp">
-    <p>Allocating jobs</p>
+
+<script data-template-name="canhelp" type="text/x-handlebars">
+    sweet bro
 </script>
 <% script('js/mobile.js') -%>
