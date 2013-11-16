@@ -8,7 +8,7 @@ PagesController.main = function() {
   this.render();
 };
 
-PagesController.foo = function() {
+PagesController.inhospital = function() {
   this.title = 'Crisis Control';
   this.render();
 };

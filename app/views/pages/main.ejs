@@ -1,9 +1,11 @@
 <% layout('../shared/layout') -%>
+
 <script data-template-name="application" type="text/x-handlebars">
     <div class="main-content">
         {{animatedOutlet name="main"}}
     </div>
 </script>
+
 <script data-template-name="index" type="text/x-handlebars">
    <div class="container">
     <div class="row">
@@ -72,7 +74,7 @@
               </div>
             </div>
             <div class="col-sm-6 action-nav-button">
-              <a {{action goToCantHelp}}>
+              <a {{action next}}>
                 <i class="fa-times"></i>
                 <span>OK</span>
               </a>
@@ -85,6 +87,95 @@
 </script>
 
 <script data-template-name="canthelp" type="text/x-handlebars">
-    <h3>BE STRONG</h2>
+<div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="action-nav-normal">
+          <div class="row action-nav-row">
+            <h3>Tell us if you become available</h3>
+            
+            <div class="col-sm-6 action-nav-button">
+              <a {{action next}}>
+                <i class="fa-times"></i>
+                <span>I'm now available.</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
 </script>
+
+<script data-template-name="getjob" type="text/x-handlebars">
+    <h3>Please wait, assigning you to a team...</h3>
+</script>
+
+<script data-template-name="waitoninstructions" type="text/x-handlebars">
+    <h3>Thanks, we will contact you if you are needed.</h3>
+</script>
+
+<script data-template-name="youareneeded" type="text/x-handlebars">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="action-nav-normal">
+          <div class="row action-nav-row">
+            <h3>We need you at the hospital</h3>
+            
+            <div class="col-sm-6 action-nav-button">
+              <a {{action next}}>
+                <i class="fa-times"></i>
+                <span>I'm on my way</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</script>
+
+<script data-template-name="onmyway" type="text/x-handlebars">
+<div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="action-nav-normal">
+          <div class="row action-nav-row">
+            <h3>See you in {{distance}} minutes</h3>
+            
+            <div class="col-sm-6 action-nav-button">
+              <a {{action next}}>
+                <i class="fa-times"></i>
+                <span>I'm here</span>
+              </a>
+            </div>
+            <div class="col-sm-6 action-nav-button">
+              <a {{action toggleDelayed target="view"}}>
+                <i class="fa-times"></i>
+                <span>{{ view.sliderToggleText }}</span>
+              </a>
+            </div>
+            <div id="sliderwrapper" id="sliderwrapper" style="display:none;">
+                <div class="row box-section" >
+                  <div class="col-md-3">{{view.distanceText}}</div>
+                  <div class="col-md-9">
+                    <div id="distanceSlider" class="ranged-slider-ui only-min"></div>
+                  </div>
+                </div>
+                <div class="col-sm-6 action-nav-button">
+                  <a {{action delayed target="view"}}>
+                    <i class="fa-times"></i>
+                    <span>OK</span>
+                  </a>
+                </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</script>
+
 <% script('js/mobile.js') -%>
