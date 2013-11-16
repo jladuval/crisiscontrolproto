@@ -11685,8 +11685,9 @@ disabled look for disabled choices in the results dropdown
   background-image: -moz-linear-gradient(top, #c7ced6, #f9fbfa);
   background-image: -o-linear-gradient(top, #c7ced6, #f9fbfa);
   background-image: linear-gradient(top, #c7ced6, #f9fbfa);
-  width: 22px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
+  margin-top:-5px;
   -webkit-box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.6), 0 -1px 0px 1px rgba(0, 0, 0, 0.15) inset, 0 1px 0px 1px rgba(255, 255, 255, 0.9) inset;
   -moz-box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.6), 0 -1px 0px 1px rgba(0, 0, 0, 0.15) inset, 0 1px 0px 1px rgba(255, 255, 255, 0.9) inset;
   box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.6), 0 -1px 0px 1px rgba(0, 0, 0, 0.15) inset, 0 1px 0px 1px rgba(255, 255, 255, 0.9) inset;
@@ -11707,7 +11708,7 @@ disabled look for disabled choices in the results dropdown
     height: 8px;
     border-radius: 50%;
     top: 50%;
-    margin-top: -4px;
+    margin-top: -3px;
     left: 50%;
     margin-left: -4px;
     background: #30a2d2;

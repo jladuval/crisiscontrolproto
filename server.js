@@ -10,5 +10,5 @@ locomotive.boot(__dirname, env, function(err, server) {
     server.listen(port, address, function() {
         var addr = this.address();
         console.log('listening on %s:%d', addr.address, addr.port);
-    });
+    }); 
 });
