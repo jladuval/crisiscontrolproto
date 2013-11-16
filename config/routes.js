@@ -6,6 +6,6 @@
 // Guide on [routing](http://locomotivejs.org/guide/routing.html) for additional
 // information.
 module.exports = function routes() {
-  this.root('pages#main');
-   this.match('foo', 'pages#foo', { via: 'get' });
+    this.root('pages#main');
+   this.match(':foo', 'pages#main', { via: 'get' });
 }
