@@ -8,4 +8,9 @@ PagesController.main = function() {
   this.render();
 };
 
+PagesController.foo = function() {
+  this.title = 'Crisis Control';
+  this.render();
+};
+
 module.exports = PagesController;

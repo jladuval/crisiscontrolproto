@@ -1,21 +1,81 @@
 <% layout('../shared/layout') -%>
 <script data-template-name="application" type="text/x-handlebars">
-    <div class="content">
+    <div class="main-content">
         {{animatedOutlet name="main"}}
     </div>
 </script>
-
 <script data-template-name="index" type="text/x-handlebars">
-    <h2>Are You Ok? </h2>
-    <a {{action goToNeedHelp}}>No</a>
-    <a {{action goToCanHelp}}>Yes</a>
+   <div class="container">
+    <div class="row">
+
+      <div class="col-md-3">
+        <div class="action-nav-normal">
+          <div class="row action-nav-row">
+            <h3>Are you OK?</h3>
+            <div class="col-sm-6 action-nav-button">
+              <a {{action goToDontNeedHelp}} title="New Project">
+                <i class="fa-check"></i>
+                <span>YES</span>
+              </a>
+            </div>
+        
+            <div class="col-sm-6 action-nav-button">
+              <a {{action goToNeedHelp}} title="Messages">
+                <i class="fa-times"></i>
+                <span>NO</span>
+              </a>
+            </div>
+          </div>
+        
+          
+        </div>
+      </div>
+    </div>
 </script>
 
 <script data-template-name="needhelp" type="text/x-handlebars">
     <h3>Someone will be in touch shortly</h2>
 </script>
 
+<script data-template-name="dontneedhelp" type="text/x-handlebars">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="action-nav-normal">
+          <div class="row action-nav-row">
+            <h3>Can You Help?</h3>
+            <div class="col-sm-6 action-nav-button">
+              <a {{action goToCanHelp}} title="New Project">
+                <i class="fa-check"></i>
+                <span>YES</span>
+              </a>
+            </div>
+        
+            <div class="col-sm-6 action-nav-button">
+              <a {{action goToCantHelp}} title="Messages">
+                <i class="fa-times"></i>
+                <span>NO</span>
+              </a>
+            </div>
+          </div>
+        
+          
+        </div>
+      </div>
+    </div>
+</script>
+
 <script data-template-name="canhelp" type="text/x-handlebars">
-    sweet bro
+    <h3>How far away from the hospital are you?</h3>
+<div class="row box-section">
+  <div class="col-md-3">Ranged Slider (only min)</div>
+  <div class="col-md-9">
+    <div id="distanceSlider" class="ranged-slider-ui only-min"></div>
+  </div>
+</div>
+</script>
+
+<script data-template-name="canthelp" type="text/x-handlebars">
+    <h3>BE STRONG</h2>
 </script>
 <% script('js/mobile.js') -%>

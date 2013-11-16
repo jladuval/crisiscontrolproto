@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%=title%></title>
-    <link href="/css/site.css" rel="stylesheet">
-    <link href="/css/ember-animated-outlet.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
     <link rel="shortcut icon" href="img/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    
+    <link href="/css/application.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/css/site.css" rel="stylesheet">
+    <link href="/css/ember-animated-outlet.css" rel="stylesheet">
+    
+    <script src="/lib/application.js" type="text/javascript"></script>
+    <title><%=title%></title>
+
     <%-stylesheets%>
   </head>
   <body>
+    <nav class="navbar navbar-default navbar-inverse navbar-static-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Crisis Control</a>
+        </div>
+    </nav>
+
     <%-body -%>
     <footer>
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ember.js/1.0.0/ember.prod.js"></script>
-        <script type="text/javascript" src="lib/ember-animated-outlet.js"></script>
+        <script type="text/javascript" src="lib/vendor/ember-animated-outlet.js"></script>
         <%-scripts%>
     </footer>
   </body>
