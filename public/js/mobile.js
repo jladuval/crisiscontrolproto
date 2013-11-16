@@ -69,5 +69,6 @@ App.CanhelpView = Ember.View.extend({
 });
 
 App.CanhelpController = Ember.Controller.extend({
- //   distance : 0
+    distance : 0
+    
 })
