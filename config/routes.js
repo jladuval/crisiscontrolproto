@@ -7,7 +7,8 @@
 // information.
 module.exports = function routes() {
     this.root('pages#main');
+    this.match("/inhospital", 'pages#inhospital', {via: 'get'});
     this.match(':foo', 'pages#main', { via: 'get' });
-    this.match("inhospital", 'pages#inhospital', {via: 'get'});
+    
     this.match("inhospital/:anything", 'pages#inhospital', {via: 'get'});
 }

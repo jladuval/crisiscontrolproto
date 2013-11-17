@@ -15483,12 +15483,17 @@ a.editable-click.editable-disabled {
   /* line 76, /home/andrei/core-admin-release/core-admin/source/stylesheets/responsive480.scss */
   .chat-box.timeline + .closable-chat-box {
     margin-left: 0; } }
-/*
 
 
 
 
+.table-normal>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: inherit;
+}
 
+.table-normal>tbody>tr:nth-of-type(odd)>td, .table-striped>tbody>tr:nth-of-type(odd)>th {
+    background-color: #F9F9F9;
+}
 
 
 

@@ -1,3 +1,223 @@
-<script type="text/handlebars" data-template-name="inhospital">
-    <h2>You're In Hospital!</h2>
+<% layout('../shared/layout') -%>
+<script data-template-name="application" type="text/x-handlebars">
+    <div class="main-content">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-6" style="padding: 0px;">
+                <div class="box" style="margin-bottom:0px">
+                  <div class="box-header">
+                    <span class="title">Christchurch Hospital</span>
+                    <ul class="box-toolbar">
+                      <li><span class="label label-red">YOU ARE ON RED TEAM</span></li>
+                    </ul>
+                  </div>
+            
+                  <div class="row box-content padded">
+                      <a {{action goToTeam }} class="col-xs-4 btn btn-default">Team</a>
+                  
+                      <a {{ action goToTaskCard }} class=" col-xs-4 btn btn-default">Task Card</a>
+                  
+                      <a {{action goToUpdates }} class=" col-xs-4 btn btn-default">Updates</a>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        {{animatedOutlet name="main"}}
+    </div>
 </script>
+
+<script data-template-name="index" type="text/x-handlebars">
+    <div class="box">
+      <div class="box-header">
+        <span class="title" style="color:red">Red Team</span>
+      </div>
+      <div class="box-content">
+        <table class="table table-normal">
+          <thead>
+          <tr>
+            <td>Allocation</td>
+            <td>Name</td>
+          </tr>
+          </thead>
+    
+          <tbody>
+              <tr class="status-success">
+                <td>ED Coordinator</td>
+                <td>Gordon Fairbairn</td>
+              </tr>
+              <tr class="status-success">
+                <td>ED Medical Controller</td>
+                <td>Seanna Wright</td>
+              </tr>
+              <tr class="status-success">
+                <td>ED Nursing Controller</td>
+                <td>Lonnie Godfrey</td>
+              </tr>
+              <tr class="status-error">
+                <td>Red Area Medical Leader</td>
+                <td>Nichola Nye</td>
+              </tr>
+              <tr class="status-pending">
+                <td>Doctor</td>
+                <td>Dawson Chapman</td>
+              </tr>
+              <tr class="status-pending">
+                <td>Doctor</td>
+                <td>Lonnie Godfrey</td>
+              </tr>
+              <tr class="status-pending">
+                <td>Doctor</td>
+                <td>Ramsey Kendall</td>
+              </tr>
+              <tr class="status-error">
+                <td>Red Area Nursing Leader</td>
+                <td>Azalea Madison</td>
+              </tr>
+              <tr class="status-pending">
+                <td>Nurse</td>
+                <td>Brandt Thorburn</td>
+              </tr>
+              <tr class="status-pending">
+                <td>Nurse</td>
+                <td>Abner Babcocke</td>
+              </tr>
+              <tr class="status-pending">
+                <td>Nurse</td>
+                <td>Adele Sowards</td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</script>
+<script data-template-name="taskcard" type="text/x-handlebars">
+<div class="accordion" id="accordion2">
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+        Section 1
+      </a>
+    </div>
+    <div id="collapseOne" class="accordion-body collapse in">
+      <div class="accordion-inner padded">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+        Section 2
+      </a>
+    </div>
+    <div id="collapseTwo" class="accordion-body collapse">
+      <div class="accordion-inner padded">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+        Section 3
+      </a>
+    </div>
+    <div id="collapseThree" class="accordion-body collapse">
+      <div class="accordion-inner padded">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+</script>
+<script data-template-name="updates" type="text/x-handlebars">
+    <div class="box">
+      <div class="box-header">
+        <span class="title">Bed Availability</span>
+      </div>
+      <div class="box-content">
+        <table class="table table-normal">
+          <thead>
+          <tr>
+            <td>Area</td>
+            <td>Beds</td>
+          </tr>
+          </thead>
+    
+          <tbody>
+          
+              {{#each bed in beds}}
+                  <tr class="status-pending">
+                        <td>{{bed.name}}</td>
+                        <td>{{bed.available}} / {{bed.total}}</td>
+                    </tr>
+              {{/each}}
+              <tr class="status-pending">
+                    <td>---</td>
+                    <td>---</td>
+                </tr>
+          </tbody>
+        </table>
+      </div>
+      <br />
+      <div class="box-header">
+        <span class="title">Theatre Availability</span>
+      </div>
+      <div class="box-content">
+        <table class="table table-normal">
+          <thead>
+              <tr>
+                <td>Area</td>
+                <td>Beds</td>
+              </tr>
+          </thead>
+    
+          <tbody>
+          
+              {{#each theatre in theatres}}
+                  <tr class="status-pending">
+                        <td>{{theatre.name}}</td>
+                        <td>{{theatre.available}} / {{theatre.total}}</td>
+                    </tr>
+              {{/each}}
+              <tr class="status-pending">
+                    <td>---</td>
+                    <td>---</td>
+                </tr>
+          </tbody>
+        </table>
+      </div>
+      <br />
+      <div class="box-header">
+        <span class="title">Current Patient Numbers</span>
+      </div>
+      <div class="box-content">
+        <table class="table table-normal">
+          <thead>
+              <tr>
+                <td>Area</td>
+                <td>Current Number</td>
+              </tr>
+          </thead>
+    
+          <tbody>
+          
+              {{#each patient in patientNumbers}}
+                  <tr class="status-pending">
+                        <td>{{patient.name}}</td>
+                        <td>{{patient.number}}</td>
+                    </tr>
+              {{/each}}
+              <tr class="status-pending">
+                    <td>---</td>
+                    <td>---</td>
+                </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</script>
+
+<% script('js/inhospital.js') -%>

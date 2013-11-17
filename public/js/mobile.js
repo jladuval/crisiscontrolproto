@@ -135,11 +135,15 @@ App.OnmywayView = Ember.View.extend({
     },
     toggleDelayed: function(){
          $("#sliderwrapper").toggle('fast');
-         this.set('sliderToggleText', "I Am No Longer Delayed");
+         if($('#sliderwrapper').is(":visible")){
+            this.set('sliderToggleText', "I Am No Longer Delayed");
+         }else{
+            this.set('sliderToggleText', "I Have Been Delayed");
+         }
     },
     sliderToggleText: "I Have Been Delayed",
     distance: 0
-})
+});
 
 App.OnmywayController = Ember.Controller.extend({
     distance: 0,
