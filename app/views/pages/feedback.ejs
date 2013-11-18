@@ -1,0 +1,50 @@
+<% layout('../shared/layout') -%>
+
+<div class="container">
+<div class="row">
+  <div class="col-md-12">
+
+    <div class="box">
+      <div class="box-header">
+        <span class="title"><i class="icon-user"></i> We would love to hear from you</span>
+      </div>
+
+      <div class="box-content">
+        <form id="formID" class="form-horizontal fill-up validatable">
+
+          <div class="padded">
+
+            <div class="form-group">
+              <label class="control-label col-lg-2">Your Email</label>
+              <div class="col-lg-10">
+                <input name="email" type="text" class="validate[required]" data-prompt-position="topLeft"/>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="control-label col-lg-2">Feedback</label>
+              <div class="col-lg-10">
+                <textarea name="feedback" class="validate[required]" data-prompt-position="topLeft" placeholder="What do you want from crisis control?" rows="6"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-blue">Submit</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+<%-script("lib/vendor/validation/jquery.validationEngine-en.js") %>
+<%-script("lib/vendor/validation/jquery.validationEngine.js") %>
+<script>
+    $('#formID').submit(function(e){
+        if(!jQuery('#formID').validationEngine('validate'))
+            e.preventDefault();
+    });
+</script>

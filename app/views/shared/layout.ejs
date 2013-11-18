@@ -15,7 +15,10 @@
     <link href="/css/application.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="/css/site.css" rel="stylesheet">
     <link href="/css/ember-animated-outlet.css" rel="stylesheet">
-    
+    <link href="/css/validation_engine.css" rel="stylesheet">
+            <script type="text/javascript" src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="lib/vendor/validation/jquery.validationEngine-en.js"></script>
+    <script src="lib/vendor/validation/jquery.validationEngine.js"></script>
     
     
     <title><%=title%></title>
@@ -26,13 +29,20 @@
     <nav class="navbar navbar-default navbar-inverse navbar-static-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Crisis Control</a>
+            <a class="navbar-brand" href="/">Crisis Control</a>
+            
+        </div>
+        <div class="navbar-right">
+            <ul class="nav navbar-nav navbar-left">
+            <li class="cdrop"><a href="/feedback">Feedback</a></li>
+
+          </ul>
         </div>
     </nav>
 
     <%-body -%>
     <footer>
-        <script type="text/javascript" src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
+
         <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="lib/vendor/jqueryui1102.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.js"></script>

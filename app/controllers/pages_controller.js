@@ -13,4 +13,15 @@ PagesController.inhospital = function() {
   this.render();
 };
 
+PagesController.feedback = function() {
+  this.title = 'Crisis Control';
+  this.render();
+};
+
+PagesController.saveFeedback = function(){
+    var email = this.params("email");
+    var feedback = this.params("feedback");
+    this.res.redirect('/' + email + feedback);
+};
+
 module.exports = PagesController;

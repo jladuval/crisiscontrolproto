@@ -2968,7 +2968,6 @@ input[type="button"].btn-block {
 .navbar-header:before, .navbar-header:after {
   content: " ";
   /* 1 */
-  display: table;
   /* 2 */ }
 /* line 25, /home/andrei/core-admin-release/core-admin/source/stylesheets/bootstrap/_mixins.scss */
 .navbar-header:after {
@@ -3107,8 +3106,7 @@ input[type="button"].btn-block {
       display: none; } }
 
 /* line 205, /home/andrei/core-admin-release/core-admin/source/stylesheets/bootstrap/_navbar.scss */
-.navbar-nav {
-  margin: 7.5px -15px; }
+.navbar-nav { }
   /* line 208, /home/andrei/core-admin-release/core-admin/source/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav > li > a {
     padding-top: 10px;
@@ -3146,15 +3144,16 @@ input[type="button"].btn-block {
         .navbar-nav > li > a {
           padding-top: 15px;
           padding-bottom: 15px; } }
+  .navbar-right {
+    float: right !important; }
 
 @media (min-width: 992px) {
   /* line 262, /home/andrei/core-admin-release/core-admin/source/stylesheets/bootstrap/_navbar.scss */
   .navbar-left {
     float: left !important; }
-
+}
   /* line 265, /home/andrei/core-admin-release/core-admin/source/stylesheets/bootstrap/_navbar.scss */
-  .navbar-right {
-    float: right !important; } }
+  
 /* line 276, /home/andrei/core-admin-release/core-admin/source/stylesheets/bootstrap/_navbar.scss */
 .navbar-form {
   margin-left: -15px;
@@ -8608,6 +8607,7 @@ label {
 
 /* line 46, /home/andrei/core-admin-release/core-admin/source/stylesheets/navigation.scss */
 .navbar-inverse .nav > li.cdrop {
+    right:12px;
   margin-top: 13px; }
   /* line 50, /home/andrei/core-admin-release/core-admin/source/stylesheets/navigation.scss */
   .navbar-inverse .nav > li.cdrop > a {
