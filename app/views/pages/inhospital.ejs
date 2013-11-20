@@ -1,7 +1,6 @@
 <% layout('../shared/layout') -%>
 <script data-template-name="application" type="text/x-handlebars">
     <div class="main-content">
-        <div class="container">
            <div class="row">
               <div class="col-md-6" style="padding: 0px;">
                 <div class="box" style="margin-bottom:0px">
@@ -22,8 +21,8 @@
                 </div>
             </div>
           </div>
-        </div>
-        {{animatedOutlet name="main"}}
+          {{outlet name="main"}}
+        
     </div>
 </script>
 
@@ -92,43 +91,110 @@
     </div>
 </script>
 <script data-template-name="taskcard" type="text/x-handlebars">
+<div class="container">
+<div class="row">
+    <div class="col-xs-12">
+        <h2>Red Nursing Leader</h2>
+    </div>
+</div>
+<div class="row">
 <div class="accordion" id="accordion2">
   <div class="accordion-group">
     <div class="accordion-heading">
       <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-        Section 1
+        Reports To
       </a>
     </div>
     <div id="collapseOne" class="accordion-body collapse in">
-      <div class="accordion-inner padded">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      <div class="accordion-inner padded col-xs-12">
+        <ul class="list-group">
+            <li class="list-group-item">Emergency Department Emergency Controller (white vest)</li>
+        </ul>
+        <h3>Located At</h3>
+         <ul>
+            <li class="list-group-item">Work Up</li>
+        </ul>
       </div>
     </div>
   </div>
   <div class="accordion-group">
     <div class="accordion-heading">
       <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-        Section 2
+        Responsible For
       </a>
     </div>
     <div id="collapseTwo" class="accordion-body collapse">
       <div class="accordion-inner padded">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        <ul>
+            <li class="list-group-item">Coordination of the resuscitation/monitored area.</li>
+            <li class="list-group-item">Liaison with the Emergency Controller</li>
+            <li class="list-group-item">Patient flow within the Work up area</li>
+        </ul>
+        
       </div>
     </div>
   </div>
   <div class="accordion-group">
     <div class="accordion-heading">
       <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-        Section 3
+        Pre Incident
       </a>
     </div>
     <div id="collapseThree" class="accordion-body collapse">
       <div class="accordion-inner padded">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        <ul>
+            <li class="list-group-item">Ensure incident paper work is available and staff are familiar with its intricacies</li>
+            <li class="list-group-item" >Ensure work is ready to receive patients</li>
+            <li class="list-group-item">Assist with the allocation of teams and roles</li>
+            <li class="list-group-item">Assign jerkins and name/designation Red labels</li>
+            <li class="list-group-item">Assess current work load</li>
+            <li class="list-group-item">Expedite transfer or discharge of remaining patients to an appropriate treatment area and facilitate the handover of care.</li>
+            <li class="list-group-item">Have a clear plan of action for the incoming patients, as not all staff will be ED trained</li>
+            <li class="list-group-item">Assign staff as they become availabale</li>
+        </ul>
       </div>
     </div>
   </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+        Incident
+      </a>
+    </div>
+    <div id="collapseFour" class="accordion-body collapse">
+      <div class="accordion-inner padded">
+        <ul>
+            <li class="list-group-item">Assign patients and staff to work up bays as they become available</li>
+            <li class="list-group-item">Assist with patient management</li>
+            <li class="list-group-item">Liaise with the Red Medical team leader</li>
+            <li class="list-group-item">Report regularly with the Emergency Controller</li>
+            <li class="list-group-item">Ensure any additional resource requirements are communicated to the ED controller</li>
+            <li class="list-group-item">Assist with the accuracy of patient tracking</li>
+            <li class="list-group-item">Assist the reception staff to remain up to date with information of current patients whereabouts</li>
+            <li class="list-group-item">Assist with any procedures as required</li>
+            <li class="list-group-item">Ensure breaks and rest periods are provided for</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
+        Post incident
+      </a>
+    </div>
+    <div id="collapseFive" class="accordion-body collapse">
+      <div class="accordion-inner padded">
+        <ul>
+            <li class="list-group-item">Ensure stand down is communicated to all appropriate people</li>
+            <li class="list-group-item">Return work area to operational readiness</li>
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
 </div>
 </script>
 <script data-template-name="updates" type="text/x-handlebars">
@@ -204,10 +270,10 @@
           <tbody>
           
               {{#each patient in patientNumbers}}
-                  <tr class="status-pending">
-                        <td>{{patient.name}}</td>
-                        <td>{{patient.number}}</td>
-                    </tr>
+                <tr class="status-pending">   
+                    <td>{{patient.name}}</td>
+                    <td>{{patient.number}}</td>
+                </tr>
               {{/each}}
               <tr class="status-pending">
                     <td>---</td>
@@ -216,8 +282,32 @@
           </tbody>
         </table>
       </div>
-    </div>
-  </div>
+       <div class="box-header">
+        <span class="title">Hospital Personnel Responded</span>
+      </div>
+      <div class="box-content">
+        <table class="table table-normal">
+          <thead>
+              <tr>
+                <td>Area</td>
+                <td>Number</td>
+              </tr>
+          </thead>
+    
+          <tbody>
+          
+            <tr class="status-pending">   
+                <td>Christchurch Hospital</td>
+                <td>104</td>
+            </tr>
+            <tr class="status-pending">   
+                <td>Princess Margaret Hospital</td>
+                <td>76</td>
+            </tr>
+              
+          </tbody>
+        </table>
+      </div>
 </script>
 
 <% script('js/inhospital.js') -%>
