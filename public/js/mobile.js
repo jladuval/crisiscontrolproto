@@ -8,7 +8,6 @@ App.Router.reopen({
 });
 
 App.Router.map(function() {
-    this.route("needhelp");
     this.route("dontneedhelp");
     this.route("canthelp");
     this.route("canhelp");
@@ -20,9 +19,6 @@ App.Router.map(function() {
 
 App.ApplicationRoute = Ember.Route.extend({
     events: {
-        goToNeedHelp: function(){
-            this.transitionToAnimated('needhelp',  {main: 'slideLeft'}); 
-        },
         goToCantHelp: function(){
             this.transitionToAnimated('canthelp',  {main: 'slideLeft'}); 
         },
@@ -67,6 +63,12 @@ App.CanhelpView = Ember.View.extend({
         });
     },
     distanceText: "I'm here now",
+});
+
+App.IndexRoute = Ember.Route.extend({
+  redirect: function() {
+    this.transitionTo('dontneedhelp');
+  }
 });
 
 App.CanhelpController = Ember.Controller.extend({

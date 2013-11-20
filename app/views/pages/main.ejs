@@ -6,42 +6,13 @@
     </div>
 </script>
 
-<script data-template-name="index" type="text/x-handlebars">
-   <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="action-nav-normal">
-          <div class="row action-nav-row">
-            <h3>Are you OK?</h3>
-            <div class="col-sm-6 action-nav-button">
-              <a {{action goToDontNeedHelp}}>
-                <i class="icon-ok"></i>
-                <span>YES</span>
-              </a>
-            </div>
-            <div class="col-sm-6 action-nav-button">
-              <a {{action goToNeedHelp}}>
-                <i class="icon-remove"></i>
-                <span>NO</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</script>
-
-<script data-template-name="needhelp" type="text/x-handlebars">
-    <h3>Someone will be in touch shortly</h2>
-</script>
-
 <script data-template-name="dontneedhelp" type="text/x-handlebars">
     <div class="container">
     <div class="row">
       <div class="col-md-3">
         <div class="action-nav-normal">
           <div class="row action-nav-row">
-            <h3>Can You Help?</h3>
+            <h3>Can you provide assistance at the hospital?</h3>
             <div class="col-sm-6 action-nav-button">
               <a {{action goToCanHelp}}>
                 <i class="icon-ok"></i>
@@ -121,7 +92,7 @@
       <div class="col-md-3">
         <div class="action-nav-normal">
           <div class="row action-nav-row">
-            <h3>We need you at the hospital</h3>
+            <h3>You are needed at the hospital</h3>
             
             <div class="col-sm-6 action-nav-button">
               <a {{action next}}>
