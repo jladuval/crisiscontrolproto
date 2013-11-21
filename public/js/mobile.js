@@ -66,7 +66,7 @@ App.IndexController = Ember.Controller.extend({
         this._super();
         setTimeout(function(){
                _this.transitionToRouteAnimated('canyouhelp', {main: 'slideLeft'});
-            },3800);
+            },5000);
     }
 });
 
