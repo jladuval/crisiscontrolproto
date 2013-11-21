@@ -6,13 +6,32 @@
     </div>
 </script>
 
-<script data-template-name="dontneedhelp" type="text/x-handlebars">
+<script data-template-name="index" type="text/x-handlebars">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="action-nav-normal">
+              <div class="row action-nav-row">
+              <div style="height:40px;">
+               </div>
+                <div class="col-xs-12">
+                    <i class="icon-exclamation-sign" style="font-size: 50px"></i>
+                </div>
+                <h3 class="col-xs-12">Christchurch Hospital Major Incident Plan Activated</h3>
+                <h4 class="col-xs-12">6.3 Magnitude Earthquake</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+</script>
+
+<script data-template-name="canyouhelp" type="text/x-handlebars">
     <div class="container">
     <div class="row">
       <div class="col-md-3">
         <div class="action-nav-normal">
           <div class="row action-nav-row">
-            <h3>Can you provide assistance at the hospital?</h3>
+            <h3 class="col-xs-12">Can you provide assistance at the hospital?</h3>
             <div class="col-sm-6 action-nav-button">
               <a {{action goToCanHelp}}>
                 <i class="icon-ok"></i>
@@ -37,7 +56,7 @@
       <div class="col-md-3">
         <div class="action-nav-normal">
           <div class="row action-nav-row">
-            <h3>How far away from the hospital are you?</h3>
+            <h3 class="col-xs-12">How far away from the hospital are you?</h3>
             <div class="row box-section">
               <div class="col-md-3">{{view.distanceText}}</div>
               <div class="col-md-9">
@@ -63,7 +82,7 @@
       <div class="col-md-3">
         <div class="action-nav-normal">
           <div class="row action-nav-row">
-            <h3>Tell us if you become available</h3>
+            <h3 class="col-xs-12">Tell us if you become available</h3>
             
             <div class="col-sm-6 action-nav-button">
               <a {{action next}}>
@@ -79,11 +98,27 @@
 </script>
 
 <script data-template-name="getjob" type="text/x-handlebars">
-    <h3>Please wait, assigning you to a team...</h3>
+ <div class="row">
+      <div class="col-md-3">
+        <div class="action-nav-normal">
+          <div class="row action-nav-row">
+            <h3 class="col-xs-12">Please wait, assigning you to a team...</h3>
+          </div>
+        </div>
+      </div>
+    </div>
 </script>
 
 <script data-template-name="waitoninstructions" type="text/x-handlebars">
-    <h3>Thanks, we will contact you if you are needed.</h3>
+ <div class="row">
+      <div class="col-md-3">
+        <div class="action-nav-normal">
+          <div class="row action-nav-row">
+            <h3 class="col-xs-12">Thanks, we will contact you if you are needed.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
 </script>
 
 <script data-template-name="youareneeded" type="text/x-handlebars">
@@ -92,7 +127,7 @@
       <div class="col-md-3">
         <div class="action-nav-normal">
           <div class="row action-nav-row">
-            <h3>You are needed at the hospital</h3>
+            <h3 class="col-xs-12">You are needed at the hospital</h3>
             
             <div class="col-sm-6 action-nav-button">
               <a {{action next}}>
@@ -113,7 +148,7 @@
       <div class="col-md-3">
         <div class="action-nav-normal">
           <div class="row action-nav-row">
-            <h3>See you in {{distance}} minutes</h3>
+            <h3 class="col-xs-12">See you in {{distance}} minutes</h3>
             
             <div class="col-sm-6 action-nav-button">
               <a {{action next}}>

@@ -2,13 +2,8 @@ var distaceFromHospital = 0;
 
 App = Ember.Application.create();
 
-
-App.Router.reopen({
-    location: 'history'
-});
-
 App.Router.map(function() {
-    this.route("dontneedhelp");
+    this.route("canyouhelp");
     this.route("canthelp");
     this.route("canhelp");
     this.route("waitoninstructions");
@@ -22,8 +17,8 @@ App.ApplicationRoute = Ember.Route.extend({
         goToCantHelp: function(){
             this.transitionToAnimated('canthelp',  {main: 'slideLeft'}); 
         },
-        goToDontNeedHelp: function(){
-            this.transitionToAnimated('dontneedhelp',  {main: 'slideLeft'}); 
+        goToCanYouHelp: function(){
+            this.transitionToAnimated('canyouhelp',  {main: 'slideLeft'}); 
         },
         goToCanHelp: function(){
             this.transitionToAnimated('canhelp',  {main: 'slideLeft'}); 
@@ -40,7 +35,7 @@ App.ApplicationView = Ember.View.extend({
 });
     
 App.NeedhelpView = Ember.View.extend();
-App.DontneedhelpView = Ember.View.extend();
+App.CanyouhelpView = Ember.View.extend();
 App.CanthelpView = Ember.View.extend();
 App.CanthelpController = Ember.Controller.extend({
     actions: {
@@ -65,10 +60,14 @@ App.CanhelpView = Ember.View.extend({
     distanceText: "I'm here now",
 });
 
-App.IndexRoute = Ember.Route.extend({
-  redirect: function() {
-    this.transitionTo('dontneedhelp');
-  }
+App.IndexController = Ember.Controller.extend({
+   init: function(){
+       var _this = this;
+        this._super();
+        setTimeout(function(){
+               _this.transitionToRouteAnimated('canyouhelp', {main: 'slideLeft'});
+            },3000);
+    }
 });
 
 App.CanhelpController = Ember.Controller.extend({

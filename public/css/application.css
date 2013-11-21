@@ -65,7 +65,7 @@ abbr[title] {
 /* line 136, /home/andrei/core-admin-release/core-admin/source/stylesheets/bootstrap/_normalize.scss */
 b,
 strong {
-  font-weight: 600; }
+  font-weight: 500; }
 
 /* line 144, /home/andrei/core-admin-release/core-admin/source/stylesheets/bootstrap/_normalize.scss */
 dfn {
@@ -564,7 +564,7 @@ dd {
 
 /* line 171, /home/andrei/core-admin-release/core-admin/source/stylesheets/bootstrap/_type.scss */
 dt {
-  font-weight: 600; }
+  font-weight: 500; }
 
 /* line 174, /home/andrei/core-admin-release/core-admin/source/stylesheets/bootstrap/_type.scss */
 dd {
@@ -1689,7 +1689,7 @@ legend {
 label {
   display: inline-block;
   margin-bottom: 5px;
-  font-weight: 600; }
+  font-weight: 500; }
 
 /* line 38, /home/andrei/core-admin-release/core-admin/source/stylesheets/bootstrap/_forms.scss */
 input[type="search"] {
@@ -3542,7 +3542,7 @@ input[type="button"].btn-block {
   display: inline;
   padding: .2em .6em .3em;
   font-size: 75%;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1;
   color: white;
   text-align: center;
@@ -5329,7 +5329,7 @@ td.visible-print {
     text-shadow: #fff 0px 1px 0px;
     background-color: #fff;
     font-size: 11px;
-    font-weight: 600;
+    font-weight: 500;
     float: left;
     display: inline;
     padding: 2px 0px;
@@ -5397,7 +5397,7 @@ h1, h2, h3, h4, h5, h6,
 
 /* line 32, /home/andrei/core-admin-release/core-admin/source/stylesheets/base.scss */
 strong, b {
-  font-weight: 600; }
+  font-weight: 500; }
 
 /* line 36, /home/andrei/core-admin-release/core-admin/source/stylesheets/base.scss */
 a {
@@ -5456,7 +5456,7 @@ i {
 /* line 95, /home/andrei/core-admin-release/core-admin/source/stylesheets/base.scss */
 h1, h2, h3, h4, h5, h6, th {
   color: #5f5f5f;
-  font-weight: 600; }
+  font-weight: 500; }
 
 /* line 101, /home/andrei/core-admin-release/core-admin/source/stylesheets/base.scss */
 .the-icons {
@@ -5546,7 +5546,7 @@ h1, h2, h3, h4, h5, h6, th {
     text-shadow: 0 1px white;
     border-bottom: 1px solid #CDCDCD;
     color: #636363;
-    font-weight: 600; }
+    font-weight: 500; }
     /* line 24, /home/andrei/core-admin-release/core-admin/source/stylesheets/mixin_helpers.scss */
     .box .box-header:before, .box .box-header:after, .box .box-footer:before, .box .box-footer:after {
       display: table;
@@ -5561,7 +5561,7 @@ h1, h2, h3, h4, h5, h6, th {
       display: block;
       padding: 10px;
       font-size: 12px;
-      font-weight: 600; }
+      font-weight: 500; }
     /* line 25, /home/andrei/core-admin-release/core-admin/source/stylesheets/box.scss */
     .box .box-header .box-toolbar, .box .box-footer .box-toolbar {
       margin: 0;
@@ -6030,7 +6030,7 @@ h1, h2, h3, h4, h5, h6, th {
   .dropdown-menu li a {
     text-shadow: 0 1px white;
     color: #475967;
-    font-weight: 600; }
+    font-weight: 500; }
     /* line 133, /home/andrei/core-admin-release/core-admin/source/stylesheets/dropdowns.scss */
     .dropdown-menu li a i {
       color: #BCBECA; }
@@ -6051,7 +6051,7 @@ h1, h2, h3, h4, h5, h6, th {
       margin-top: 15px;
       color: #9EA1AA;
       font-size: 16px;
-      font-weight: 600; }
+      font-weight: 500; }
 /*!
  *  Font Awesome 3.0.2
  *  the iconic font designed for use with Twitter Bootstrap
@@ -7773,7 +7773,7 @@ table.fc-border-separate {
 /* event styles */
 /* line 357, /home/andrei/core-admin-release/core-admin/source/stylesheets/fullcalendar.scss */
 .fc-cols .fc-event-time {
-  font-weight: 600; }
+  font-weight: 500; }
 
 /* right-to-left */
 /* line 364, /home/andrei/core-admin-release/core-admin/source/stylesheets/fullcalendar.scss */
@@ -7974,7 +7974,7 @@ table.fc-border-separate {
 /* line 83, /home/andrei/core-admin-release/core-admin/source/stylesheets/gritter.scss */
 .gritter-title {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 0 0 7px 0;
   display: block;
   text-shadow: 1px 1px 0 #000;
@@ -8031,7 +8031,7 @@ table.fc-border-separate {
     .num-stats li .number {
       text-shadow: 0 1px #fff;
       font-size: 18px;
-      font-weight: 600;
+      font-weight: 500;
       display: block;
       line-height: 18px; }
     /* line 52, /home/andrei/core-admin-release/core-admin/source/stylesheets/numeric_stats.scss */
@@ -8497,7 +8497,7 @@ label {
     border-radius: 3px; }
     /* line 27, /home/andrei/core-admin-release/core-admin/source/stylesheets/tags.scss */
     .tagsinput span.tag a {
-      font-weight: 600;
+      font-weight: 500;
       font-size: 11px;
       float: right; }
   /* line 37, /home/andrei/core-admin-release/core-admin/source/stylesheets/tags.scss */
@@ -8584,7 +8584,7 @@ label {
   position: relative;
   padding-top: 9px;
   padding-bottom: 9px;
-  font-weight: 600; }
+  font-weight: 500; }
   /* line 31, /home/andrei/core-admin-release/core-admin/source/stylesheets/navigation.scss */
   .navbar-nav > li > a.dropdown-avatar .badge {
     position: absolute;
@@ -8839,7 +8839,7 @@ label {
   position: relative; }
   /* line 153, /home/andrei/core-admin-release/core-admin/source/stylesheets/sidebar.scss */
   .user-avatar .dropdown-toggle span {
-    font-weight: 600; }
+    font-weight: 500; }
   /* line 161, /home/andrei/core-admin-release/core-admin/source/stylesheets/sidebar.scss */
   .user-avatar a {
     display: inline-block; }
@@ -9111,7 +9111,7 @@ hr.divider, li.divider {
         background: -webkit-gradient(linear, right bottom, left top, from(#68a6ce), to(#92cff5)); }
       /* line 87, /home/andrei/core-admin-release/core-admin/source/stylesheets/breadcrumbs.scss */
       #breadcrumbs .breadcrumb-button.blue .breadcrumb-label {
-        font-weight: 600;
+        font-weight: 500;
         box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5) inset;
         border-top-left-radius: 3px;
         border-bottom-left-radius: 3px;
@@ -9290,7 +9290,7 @@ hr.divider, li.divider {
   position: absolute;
   text-align: center;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 16px;
   top: 0;
   right: 0;
@@ -9386,7 +9386,7 @@ hr.divider, li.divider {
   -o-border-radius: 2px;
   border-radius: 2px;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 500;
   text-shadow: 0 -1px #6f6f6f; }
   /* line 48, /home/andrei/core-admin-release/core-admin/source/stylesheets/buttons.scss */
   .btn:hover, .btn:active, .btn:focus {
@@ -9885,7 +9885,7 @@ hr.divider, li.divider {
 
 /* line 94, /home/andrei/core-admin-release/core-admin/source/stylesheets/buttons.scss */
 button.btn {
-  font-weight: 600; }
+  font-weight: 500; }
 
 /* line 98, /home/andrei/core-admin-release/core-admin/source/stylesheets/buttons.scss */
 .btn-group > .btn, .btn-group > .dropdown-menu {
@@ -10008,7 +10008,7 @@ button.btn {
       box-shadow: 0 0 0 1px #fafafa inset, 0 1px 1px 0px #dddddd;
       padding: 10px 0;
       display: block;
-      font-weight: 600;
+      font-weight: 500;
       white-space: nowrap;
       color: #626262;
       -webkit-box-sizing: border-box;
@@ -10041,7 +10041,7 @@ button.btn {
       .action-nav-normal .action-nav-button a > span {
         display: block;
         padding-top: 4px;
-        font-weight: 600; }
+        font-weight: 500; }
       /* line 96, /home/andrei/core-admin-release/core-admin/source/stylesheets/action_nav.scss */
       .action-nav-normal .action-nav-button a > i {
         font-size: 32px;
@@ -10387,7 +10387,7 @@ button.btn {
 /* line 30, /home/andrei/core-admin-release/core-admin/source/stylesheets/stats.scss */
 .dashboard-stats .stats-label {
   color: #999999;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   margin-top: 5px; }
 /* line 39, /home/andrei/core-admin-release/core-admin/source/stylesheets/stats.scss */
@@ -10481,7 +10481,7 @@ button.btn {
   white-space: nowrap;
   font-size: 17px;
   line-height: 17px;
-  font-weight: 600;
+  font-weight: 500;
   font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   cursor: inherit;
@@ -12076,7 +12076,7 @@ disabled look for disabled choices in the results dropdown
   position: relative;
   text-align: center;
   font-size: 16px;
-  font-weight: 600; }
+  font-weight: 500; }
   /* line 7, /home/andrei/core-admin-release/core-admin/source/stylesheets/easy_pie_chart.scss */
   .easyPieChart.easy-pie-chart-small {
     font-size: 10px; }
@@ -12396,7 +12396,7 @@ table.dataTable {
     cursor: pointer;
     *cursor: hand;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
     text-shadow: 0 1px rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 1px 0px white inset;
     -moz-box-shadow: 0 1px 0px white inset;
@@ -12404,7 +12404,7 @@ table.dataTable {
   /* line 28, /home/andrei/core-admin-release/core-admin/source/stylesheets/dataTables.scss */
   table.dataTable tfoot th {
     padding: 3px 18px 3px 10px;
-    font-weight: 600; }
+    font-weight: 500; }
   /* line 33, /home/andrei/core-admin-release/core-admin/source/stylesheets/dataTables.scss */
   table.dataTable td {
     padding: 7px 11px; }
@@ -12579,7 +12579,7 @@ table.dataTable {
     margin: 0 3px;
     cursor: pointer;
     color: #666;
-    font-weight: 600;
+    font-weight: 500;
     text-shadow: 0 1px rgba(255, 255, 255, 0.5);
     font-size: 11px;
     -webkit-box-shadow: 0 1px 0 white inset;
@@ -12725,7 +12725,7 @@ table.dataTable th:active {
     text-shadow: 0 1px white;
     border-bottom: 1px solid #CDCDCD;
     color: #636363;
-    font-weight: 600;
+    font-weight: 500;
     border-top: 1px solid #cdcdcd; }
   /* line 22, /home/andrei/core-admin-release/core-admin/source/stylesheets/accordion.scss */
   .accordion-group:first-child {
@@ -12913,7 +12913,7 @@ table.dataTable th:active {
   border-left: 1px solid #C9C9C9;
   border-right: 1px solid #C9C9C9;
   border-bottom: 1px solid #AEAEAE;
-  font-weight: 600;
+  font-weight: 500;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -13236,7 +13236,7 @@ table.dataTable th:active {
     color: #666;
     height: 25px;
     line-height: 25px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 12px;
     text-shadow: 0 1px rgba(255, 255, 255, 0.5);
     background: #eaeaea;
@@ -13398,7 +13398,7 @@ table.dataTable th:active {
 /* line 47, /home/andrei/core-admin-release/core-admin/source/stylesheets/news.scss */
 .news-title {
   color: #636364;
-  font-weight: 600;
+  font-weight: 500;
   text-shadow: 0 1px rgba(255, 255, 255, 0.5);
   font-size: 16px; }
 
@@ -13413,7 +13413,7 @@ table.dataTable th:active {
   .news-time span {
     display: block;
     font-size: 24px;
-    font-weight: 600; }
+    font-weight: 500; }
 /* line 14, /home/andrei/core-admin-release/core-admin/source/stylesheets/badges.scss */
 .badge-blue, .badge-gray, .badge-green, .badge-red, .badge-dark-red, .badge-black, .badge-cyan, .badge-purple {
   display: inline-block;
