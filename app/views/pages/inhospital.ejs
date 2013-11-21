@@ -96,7 +96,7 @@
 <div class="container">
 <div class="row">
     <div class="col-xs-12">
-        <h3>Red Nursing Leader</h3>
+        <h3>Your Job: Red Nursing Leader</h3>
     </div>
 </div>
 <div class="row">
@@ -325,7 +325,262 @@
                 <td>Triage set up in ambulance bay. Prehospital triage/treatment is rare.</td>
             </tr>
             <tr class="status-pending">   
-                <td>2:55pm</td>
+                <td>12:55pm</td>
+                <td>Casualties have started to arrive.</td>
+            </tr>
+              
+          </tbody>
+        </table>
+      </div>
+      </div>
+</script>
+
+<% script('js/inhospital.js') -%>>Nurse</td>
+                <td>Abner Babcocke</td>
+              </tr>
+              <tr class="status-pending">
+                <td>Nurse</td>
+                <td>Adele Sowards</td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</script>
+<script data-template-name="taskcard" type="text/x-handlebars">
+<div class="container">
+<div class="row">
+    <div class="col-xs-12">
+        <h3>Your Job: Red Nursing Leader</h3>
+    </div>
+</div>
+<div class="row">
+<div class="accordion" id="accordion2">
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+        Reports To
+      </a>
+    </div>
+    <div id="collapseOne" class="accordion-body collapse in">
+      <div class="accordion-inner padded col-xs-12">
+        <ul class="list-group">
+            <li class="list-group-item">Emergency Department Emergency Controller (white vest)</li>
+            <li class="list-group-item">Located At: Work Up</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+        Responsible For
+      </a>
+    </div>
+    <div id="collapseTwo" class="accordion-body collapse">
+      <div class="accordion-inner padded">
+        <ul>
+            <li class="list-group-item">Coordination of the resuscitation/monitored area.</li>
+            <li class="list-group-item">Liaison with the Emergency Controller</li>
+            <li class="list-group-item">Patient flow within the Work up area</li>
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+        Pre Incident
+      </a>
+    </div>
+    <div id="collapseThree" class="accordion-body collapse">
+      <div class="accordion-inner padded">
+        <ul>
+            <li class="list-group-item">Ensure incident paper work is available and staff are familiar with its intricacies</li>
+            <li class="list-group-item" >Ensure work is ready to receive patients</li>
+            <li class="list-group-item">Assist with the allocation of teams and roles</li>
+            <li class="list-group-item">Assign jerkins and name/designation Red labels</li>
+            <li class="list-group-item">Assess current work load</li>
+            <li class="list-group-item">Expedite transfer or discharge of remaining patients to an appropriate treatment area and facilitate the handover of care.</li>
+            <li class="list-group-item">Have a clear plan of action for the incoming patients, as not all staff will be ED trained</li>
+            <li class="list-group-item">Assign staff as they become availabale</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+        Incident
+      </a>
+    </div>
+    <div id="collapseFour" class="accordion-body collapse">
+      <div class="accordion-inner padded">
+        <ul>
+            <li class="list-group-item">Assign patients and staff to work up bays as they become available</li>
+            <li class="list-group-item">Assist with patient management</li>
+            <li class="list-group-item">Liaise with the Red Medical team leader</li>
+            <li class="list-group-item">Report regularly with the Emergency Controller</li>
+            <li class="list-group-item">Ensure any additional resource requirements are communicated to the ED controller</li>
+            <li class="list-group-item">Assist with the accuracy of patient tracking</li>
+            <li class="list-group-item">Assist the reception staff to remain up to date with information of current patients whereabouts</li>
+            <li class="list-group-item">Assist with any procedures as required</li>
+            <li class="list-group-item">Ensure breaks and rest periods are provided for</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
+        Post incident
+      </a>
+    </div>
+    <div id="collapseFive" class="accordion-body collapse">
+      <div class="accordion-inner padded">
+        <ul>
+            <li class="list-group-item">Ensure stand down is communicated to all appropriate people</li>
+            <li class="list-group-item">Return work area to operational readiness</li>
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+</script>
+<script data-template-name="updates" type="text/x-handlebars">
+    <div class="box">
+      <div class="box-header">
+        <span class="title">Bed Availability</span>
+      </div>
+      <div class="box-content">
+        <table class="table table-normal">
+          <thead>
+          <tr>
+            <td>Area</td>
+            <td>Beds</td>
+          </tr>
+          </thead>
+    
+          <tbody>
+          
+              {{#each bed in beds}}
+                  <tr class="status-pending">
+                        <td>{{bed.name}}</td>
+                        <td>{{bed.available}} / {{bed.total}}</td>
+                    </tr>
+              {{/each}}
+          </tbody>
+        </table>
+      </div>
+      <br />
+      <div class="box-header">
+        <span class="title">Theatre Availability</span>
+      </div>
+      <div class="box-content">
+        <table class="table table-normal">
+          <thead>
+              <tr>
+                <td>Area</td>
+                <td>Theatres</td>
+              </tr>
+          </thead>
+    
+          <tbody>
+          
+              {{#each theatre in theatres}}
+                  <tr class="status-pending">
+                        <td>{{theatre.name}}</td>
+                        <td>{{theatre.available}} / {{theatre.total}}</td>
+                    </tr>
+              {{/each}}
+          </tbody>
+        </table>
+      </div>
+      <br />
+      <div class="box-header">
+        <span class="title">Patients Arrived So Far</span>
+      </div>
+      <div class="box-content">
+        <table class="table table-normal">
+          <thead>
+              <tr>
+                <td>Area</td>
+                <td>Current Number</td>
+              </tr>
+          </thead>
+    
+          <tbody>
+          
+              {{#each patient in patientNumbers}}
+                <tr class="status-pending">   
+                    <td>{{patient.name}}</td>
+                    <td>{{patient.number}}</td>
+                </tr>
+              {{/each}}
+              
+          </tbody>
+        </table>
+      </div>
+       <div class="box-header">
+        <span class="title">Hospital Personnel Responded</span>
+      </div>
+      <div class="box-content">
+        <table class="table table-normal">
+          <thead>
+              <tr>
+                <td>Area</td>
+                <td>Number</td>
+              </tr>
+          </thead>
+    
+          <tbody>
+            <tr class="status-pending">   
+                <td>Christchurch Hospital</td>
+                <td>105</td>
+            </tr>
+             <tr class="status-pending">   
+                <td>Princess Margarent Hospital</td>
+                <td>60</td>
+            </tr>
+            <tr class="status-pending">   
+                <td>Burwood Hospital</td>
+                <td>42</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+       <div class="box-header">
+        <span class="title">Messages</span>
+      </div>
+      <div class="box-content">
+        <table class="table table-normal">
+          <thead>
+              <tr>
+                <td>Time</td>
+                <td>Message</td>
+              </tr>
+          </thead>
+    
+          <tbody>
+          
+            <tr class="status-pending">   
+                <td>2:45pm</td>
+                <td>NZ's first ever national ICU teleconference is underway</td>
+            </tr>
+            <tr class="status-pending">   
+                <td>1:59pm</td>
+                <td>The hospital's most recent projection of total patient arrivals is ~700-800</td>
+            </tr>
+            <tr class="status-pending">   
+                <td>1:23pm</td>
+                <td>Triage set up in ambulance bay. Prehospital triage/treatment is rare.</td>
+            </tr>
+            <tr class="status-pending">   
+                <td>12:55pm</td>
                 <td>Casualties have started to arrive.</td>
             </tr>
               
