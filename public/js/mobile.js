@@ -103,7 +103,7 @@ App.WaitoninstructionsController = Ember.Controller.extend({
         var _this = this;
         setTimeout(function(){
             _this.transitionToRouteAnimated('youareneeded', {main: 'slideLeft'});
-        },3000);
+        },2000);
     }
 });
 

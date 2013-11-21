@@ -27,49 +27,54 @@ App.UpdatesController = Ember.Controller.extend({
    beds: [
        {
            name: "Resus", 
-           available: 63, 
-           total: 203
+           available: 4, 
+           total: 20
        },
        {
            name: "Ambulatory", 
-           available: 23, 
-           total: 44
+           available: 2, 
+           total: 5
        },
        {
            name: "Work Up", 
-           available: 54, 
-           total: 374
+           available: 9, 
+           total: 15
        },
        {
            name: "ICU", 
-           available: 12, 
-           total: 46
+           available: 11, 
+           total: 18
        }
    ],
    theatres: [
        {
            name: "Christchurch Hospital", 
-           available: 3, 
-           total: 6
+           available: 6, 
+           total: 11
        },
        {
            name: "Christchurch Womens Hospital", 
-           available: 1, 
+           available: 0, 
+           total: 5
+       },
+        {
+           name: "Burwood Hospital", 
+           available: 2, 
            total: 4
        }
    ],
    patientNumbers: [
        {
            name: "Red", 
-           number: 32
+           number: 62
        },
        {
            name: "Yellow", 
-           number: 56
+           number: 95
        },
        {
            name: "Green", 
-           number: 245
+           number: 184
        }
        
    ],

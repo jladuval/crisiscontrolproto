@@ -43,15 +43,15 @@
           </thead>
     
           <tbody>
-              <tr class="status-success">
+              <tr class="status-info">
                 <td>ED Coordinator</td>
                 <td>Gordon Fairbairn</td>
               </tr>
-              <tr class="status-success">
+              <tr class="status-info">
                 <td>ED Medical Controller</td>
                 <td>Seanna Wright</td>
               </tr>
-              <tr class="status-success">
+              <tr class="status-info">
                 <td>ED Nursing Controller</td>
                 <td>Lonnie Godfrey</td>
               </tr>
@@ -111,10 +111,7 @@
       <div class="accordion-inner padded col-xs-12">
         <ul class="list-group">
             <li class="list-group-item">Emergency Department Emergency Controller (white vest)</li>
-        </ul>
-        <h5>Located At</h5>
-         <ul>
-            <li class="list-group-item">Work Up</li>
+            <li class="list-group-item">Located At: Work Up</li>
         </ul>
       </div>
     </div>
@@ -221,10 +218,6 @@
                         <td>{{bed.available}} / {{bed.total}}</td>
                     </tr>
               {{/each}}
-              <tr class="status-pending">
-                    <td>---</td>
-                    <td>---</td>
-                </tr>
           </tbody>
         </table>
       </div>
@@ -249,10 +242,6 @@
                         <td>{{theatre.available}} / {{theatre.total}}</td>
                     </tr>
               {{/each}}
-              <tr class="status-pending">
-                    <td>---</td>
-                    <td>---</td>
-                </tr>
           </tbody>
         </table>
       </div>
@@ -277,10 +266,7 @@
                     <td>{{patient.number}}</td>
                 </tr>
               {{/each}}
-              <tr class="status-pending">
-                    <td>---</td>
-                    <td>---</td>
-                </tr>
+              
           </tbody>
         </table>
       </div>
@@ -297,14 +283,50 @@
           </thead>
     
           <tbody>
-          
             <tr class="status-pending">   
                 <td>Christchurch Hospital</td>
-                <td>104</td>
+                <td>105</td>
+            </tr>
+             <tr class="status-pending">   
+                <td>Princess Margarent Hospital</td>
+                <td>60</td>
             </tr>
             <tr class="status-pending">   
-                <td>Princess Margaret Hospital</td>
-                <td>76</td>
+                <td>Burwood Hospital</td>
+                <td>42</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+       <div class="box-header">
+        <span class="title">Messages</span>
+      </div>
+      <div class="box-content">
+        <table class="table table-normal">
+          <thead>
+              <tr>
+                <td>Time</td>
+                <td>Message</td>
+              </tr>
+          </thead>
+    
+          <tbody>
+          
+            <tr class="status-pending">   
+                <td>2:45 pm</td>
+                <td>NZ's first ever national ICU teleconference is underway</td>
+            </tr>
+            <tr class="status-pending">   
+                <td>1:59 pm</td>
+                <td>The hospital's most recent projection of total patient arrivals is ~700-800</td>
+            </tr>
+            <tr class="status-pending">   
+                <td>1:23 pm</td>
+                <td>Triage set up in ambulance bay. Prehospital triage/treatment is rare.</td>
+            </tr>
+            <tr class="status-pending">   
+                <td>2:55 pml</td>
+                <td>Casualties have started to arrive.</td>
             </tr>
               
           </tbody>
